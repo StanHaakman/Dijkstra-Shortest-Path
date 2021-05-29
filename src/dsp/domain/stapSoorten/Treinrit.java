@@ -6,8 +6,8 @@ import dsp.domain.Stap;
 public class Treinrit extends Stap {
     private int tijdMinuten;
 
-    public Treinrit(String naam, Locatie startPunt, Locatie eindPunt, int tijdMinuten) {
-        super(naam, startPunt, eindPunt);
+    public Treinrit(String indicatie, Locatie startPunt, Locatie eindPunt, int tijdMinuten) {
+        super(indicatie, startPunt, eindPunt);
         this.tijdMinuten = tijdMinuten;
     }
 

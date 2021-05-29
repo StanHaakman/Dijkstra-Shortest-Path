@@ -6,8 +6,8 @@ import dsp.domain.Stap;
 public class Autorit extends Stap {
     private int kostenEuros;
 
-    public Autorit(String naam, Locatie startPunt, Locatie eindPunt, int kostenEuros) {
-        super(naam, startPunt, eindPunt);
+    public Autorit(String indicatie, Locatie startPunt, Locatie eindPunt, int kostenEuros) {
+        super(indicatie, startPunt, eindPunt);
         this.kostenEuros = kostenEuros;
     }
 

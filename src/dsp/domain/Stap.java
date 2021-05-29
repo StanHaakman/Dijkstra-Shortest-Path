@@ -14,4 +14,12 @@ public class Stap {
     public String getNaam() {
         return naam;
     }
+
+    public Locatie getStartPunt() {
+        return startPunt;
+    }
+
+    public Locatie getEindPunt() {
+        return eindPunt;
+    }
 }

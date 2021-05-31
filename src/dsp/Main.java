@@ -7,10 +7,6 @@ import dsp.domain.stapSoorten.Autorit;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World");
-
-        Reis autoReis = new Reis();
-
         Locatie a = new Locatie("A");
         Locatie b = new Locatie("B");
         Locatie c = new Locatie("C");
@@ -20,14 +16,17 @@ public class Main {
         Autorit autoritAB = new Autorit("A-B", a, b, 10);
         Autorit autoritBC = new Autorit("B-C", b, c, 30);
         Autorit autoritCD = new Autorit("C-D", c, d, 5);
-        Autorit autoritDA = new Autorit("D-A", c, d, 60);
-        Autorit autoritBD = new Autorit("C-D", c, d, 20);
+        Autorit autoritDA = new Autorit("D-A", d, a, 60);
+        Autorit autoritBD = new Autorit("B-D", b, d, 20);
 
-        autoReis.addStap(autoritAB);
-        autoReis.addStap(autoritBC);
-        autoReis.addStap(autoritCD);
-        autoReis.addStap(autoritDA);
-        autoReis.addStap(autoritBD);
-        System.out.println(autoReis);
+        Reis autoReis = new Reis(a,d);
+
+        autoReis.addStap(autoritAB.getKostenEuros(), autoritAB);
+        autoReis.addStap(autoritBC.getKostenEuros(), autoritBC);
+        autoReis.addStap(autoritCD.getKostenEuros(), autoritCD);
+        autoReis.addStap(autoritDA.getKostenEuros(), autoritDA);
+        autoReis.addStap(autoritBD.getKostenEuros(), autoritBD);
+
+        autoReis.dijkstra();
     }
 }

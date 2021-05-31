@@ -2,24 +2,24 @@ package dsp.domain;
 
 public class Stap {
     private String indicatie;
-    private Locatie startPunt;
-    private Locatie eindPunt;
+    private Locatie locatieLinks;
+    private Locatie locatieRechts;
 
-    public Stap(String indicatie, Locatie startPunt, Locatie eindPunt) {
+    public Stap(String indicatie, Locatie locatieLinks, Locatie locatieRechts) {
         this.indicatie = indicatie;
-        this.startPunt = startPunt;
-        this.eindPunt = eindPunt;
+        this.locatieLinks = locatieLinks;
+        this.locatieRechts = locatieRechts;
     }
 
     public String getNaam() {
         return indicatie;
     }
 
-    public Locatie getStartPunt() {
-        return startPunt;
+    public Locatie getLocatieLinks() {
+        return locatieLinks;
     }
 
-    public Locatie getEindPunt() {
-        return eindPunt;
+    public Locatie getLocatieRechts() {
+        return locatieRechts;
     }
 }

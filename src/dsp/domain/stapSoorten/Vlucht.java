@@ -7,8 +7,8 @@ public class Vlucht extends Stap {
     private final int kostenEuros;
     private final double kans;
 
-    public Vlucht(String indicatie, Locatie startPunt, Locatie eindPunt, int kostenEuros, double kans) {
-        super(indicatie, startPunt, eindPunt);
+    public Vlucht(String indicatie, Locatie locatieLinks, Locatie locatieRechts, int kostenEuros, double kans) {
+        super(indicatie, locatieLinks, locatieRechts);
         this.kostenEuros = kostenEuros;
         this.kans = kans;
     }

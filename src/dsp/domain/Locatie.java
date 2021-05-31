@@ -25,4 +25,11 @@ public class Locatie {
     public int hashCode() {
         return Objects.hash(naam);
     }
+
+    @Override
+    public String toString() {
+        return "Locatie{" +
+                "naam='" + naam + '\'' +
+                '}';
+    }
 }

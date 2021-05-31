@@ -19,7 +19,7 @@ public class Main {
         Autorit autoritDA = new Autorit("D-A", d, a, 60);
         Autorit autoritBD = new Autorit("B-D", b, d, 20);
 
-        Reis autoReis = new Reis(a,d);
+        Reis autoReis = new Reis(a,c);
 
         autoReis.addStap(autoritAB.getKostenEuros(), autoritAB);
         autoReis.addStap(autoritBC.getKostenEuros(), autoritBC);
@@ -28,5 +28,6 @@ public class Main {
         autoReis.addStap(autoritBD.getKostenEuros(), autoritBD);
 
         autoReis.dijkstra();
+        System.out.println(autoReis);
     }
 }

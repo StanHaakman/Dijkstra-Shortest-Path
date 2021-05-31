@@ -22,7 +22,9 @@ public class Reis implements Comparable<Reis>{
     @Override
     public String toString() {
         return "Reis{" +
-                "stappen=" + stappen +
+                "beginStad=" + beginStad +
+                ", eindStad=" + eindStad +
+                ", journey=" + journey +
                 '}';
     }
 

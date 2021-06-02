@@ -35,7 +35,6 @@ public class Reis implements Comparable<Reis>{
         while (!this.eindStad.equals(result)) {
             Map<Stap, Integer> next = getShortestPath(options);
             Stap nextStap = (Stap) next.keySet().toArray()[0];
-            System.out.println(next);
             journey.put(nextStap, next.get(nextStap));
             result = nextStap.getOther(result);
             options = getValidStappen(result);

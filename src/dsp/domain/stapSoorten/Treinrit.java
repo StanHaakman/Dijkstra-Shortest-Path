@@ -18,7 +18,8 @@ public class Treinrit extends Stap {
     @Override
     public String toString() {
         return "Treinrit { " +
-                "tijdMinuten=" + tijdMinuten +
+                super.getIndicatie() +
+                " tijdMinuten=" + tijdMinuten +
                 '}';
     }
 }

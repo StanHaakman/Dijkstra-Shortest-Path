@@ -23,8 +23,9 @@ public class Vlucht extends Stap {
 
     @Override
     public String toString() {
-        return "Vlucht{ " + getNaam() +
-                "kostenEuros=" + kostenEuros +
+        return "Vlucht{ " +
+                super.getIndicatie() +
+                " kostenEuros=" + kostenEuros +
                 ", kans=" + kans +
                 '}';
     }

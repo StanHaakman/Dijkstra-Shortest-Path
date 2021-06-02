@@ -1,6 +1,7 @@
 package dsp.domain;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Reis implements Comparable<Reis>{
     private Locatie beginStad;

@@ -20,7 +20,7 @@ public class Stap {
         return null;
     }
 
-    public String getNaam() {
+    public String getIndicatie() {
         return indicatie;
     }
 

@@ -18,7 +18,8 @@ public class Autorit extends Stap {
     @Override
     public String toString() {
         return "Autorit { " +
-                "kostenEuros=" + kostenEuros +
+                super.getIndicatie() +
+                " kostenEuros=" + kostenEuros +
                 '}';
     }
 }

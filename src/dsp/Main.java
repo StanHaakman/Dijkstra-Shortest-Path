@@ -3,7 +3,6 @@ package dsp;
 import dsp.domain.Locatie;
 import dsp.domain.Reis;
 import dsp.domain.stapSoorten.Autorit;
-import dsp.domain.stapSoorten.Vlucht;
 
 public class Main {
 
@@ -19,12 +18,6 @@ public class Main {
         Autorit autoritCD = new Autorit("C-D", c, d, 5);
         Autorit autoritDA = new Autorit("D-A", d, a, 60);
         Autorit autoritBD = new Autorit("B-D", b, d, 20);
-
-        Vlucht vluchtAB = new Vlucht("AB", a, b, 20, 20);
-
-        Reis vliegrit =  new Reis(a, c);
-
-        vliegrit.addStap(vluchtAB.getKostenEuros(), vluchtAB, vluchtAB.getKans());
 
         Reis autoReis = new Reis(a,c);
 

@@ -14,12 +14,11 @@ public class Reis implements Comparable<Reis>{
     }
 
     public void addStap(Integer value, Stap x, Integer... kans) {
-        System.out.println(value);
         if (kans.length == 1) {
-            double tempValue = Math.round(value / 100) * kans[0];
+            long temp = value;
+            double tempValue = temp / 100.0 * kans[0];
             value = value + (int) (tempValue);
         }
-        System.out.println(value);
         this.stappen.put(x, value);
     }
 

@@ -13,17 +13,14 @@ public class Reis implements Comparable<Reis>{
         this.eindStad = eindStad;
     }
 
-    public void addStap(Integer value, Stap x) {
+    public void addStap(Integer value, Stap x, Integer... kans) {
+        System.out.println(value);
+        if (kans.length == 1) {
+            double tempValue = Math.round(value / 100) * kans[0];
+            value = value + (int) (tempValue);
+        }
+        System.out.println(value);
         this.stappen.put(x, value);
-    }
-
-    @Override
-    public String toString() {
-        return "Reis{" +
-                "beginStad=" + beginStad +
-                ", eindStad=" + eindStad +
-                ", journey=" + journey +
-                '}';
     }
 
     @Override
@@ -71,5 +68,18 @@ public class Reis implements Comparable<Reis>{
         }
         shortest.put(min, stappen.get(min));
         return shortest;
+    }
+
+    public Map<Stap, Integer> getStappen() {
+        return stappen;
+    }
+
+    @Override
+    public String toString() {
+        return "Reis{" +
+                "beginStad=" + beginStad +
+                ", eindStad=" + eindStad +
+                ", journey=" + journey +
+                '}';
     }
 }

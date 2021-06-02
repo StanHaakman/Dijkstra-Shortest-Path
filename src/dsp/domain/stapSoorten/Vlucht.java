@@ -5,9 +5,9 @@ import dsp.domain.Stap;
 
 public class Vlucht extends Stap {
     private final int kostenEuros;
-    private final double kans;
+    private final int kans;
 
-    public Vlucht(String indicatie, Locatie locatieLinks, Locatie locatieRechts, int kostenEuros, double kans) {
+    public Vlucht(String indicatie, Locatie locatieLinks, Locatie locatieRechts, int kostenEuros, int kans) {
         super(indicatie, locatieLinks, locatieRechts);
         this.kostenEuros = kostenEuros;
         this.kans = kans;
@@ -17,7 +17,7 @@ public class Vlucht extends Stap {
         return kostenEuros;
     }
 
-    public double getKans() {
+    public int getKans() {
         return kans;
     }
 

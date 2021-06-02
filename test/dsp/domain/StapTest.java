@@ -1,20 +1,39 @@
 package dsp.domain;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
-public class StapTest {
+class StapTest {
 
     @Test
-    public void getOther() {
+    void getOther() {
+        Locatie a = new Locatie("A");
+        Locatie b = new Locatie("B");
+
+        Stap aEnB = new Stap("A-B", a, b);
+
+        assertEquals(aEnB.getOther(a), b);
+        assertEquals(aEnB.getOther(b), a);
     }
 
     @Test
-    public void getLocatieLinks() {
+    void getLocatieLinks() {
+        Locatie a = new Locatie("A");
+        Locatie b = new Locatie("B");
+
+        Stap aEnB = new Stap("A-B", a, b);
+        assertEquals(aEnB.getLocatieLinks(), a);
+        assertNotNull(aEnB.getLocatieLinks());
     }
 
     @Test
-    public void getLocatieRechts() {
+    void getLocatieRechts() {
+        Locatie a = new Locatie("A");
+        Locatie b = new Locatie("B");
+
+        Stap aEnB = new Stap("A-B", a, b);
+        assertEquals(aEnB.getLocatieRechts(), b);
+        assertNotNull(aEnB.getLocatieRechts());
     }
 }

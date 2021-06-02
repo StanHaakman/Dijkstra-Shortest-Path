@@ -4,7 +4,6 @@ public class Stap {
     private String indicatie;
     private Locatie locatieLinks;
     private Locatie locatieRechts;
-    private int variable;
 
     public Stap(String indicatie, Locatie locatieLinks, Locatie locatieRechts) {
         this.indicatie = indicatie;

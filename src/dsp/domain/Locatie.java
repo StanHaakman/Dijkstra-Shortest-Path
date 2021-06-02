@@ -9,10 +9,6 @@ public class Locatie {
         this.naam = naam;
     }
 
-    public String getNaam() {
-        return naam;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

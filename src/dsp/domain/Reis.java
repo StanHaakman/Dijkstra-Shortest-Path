@@ -1,7 +1,5 @@
 package dsp.domain;
 
-import dsp.domain.stapSoorten.Autorit;
-
 import java.util.*;
 
 public class Reis implements Comparable<Reis>{
